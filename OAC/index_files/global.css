@@ -1,0 +1,3717 @@
+/* RESET STYLES */
+/* http://meyerweb.com/eric/tools/css/reset/ v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body{line-height:1;} 
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content:'';content:none;}
+:focus{outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+/* END RESET*/
+
+/**
+ * Main site definitions
+ *
+ */
+body {
+    min-width:991px;
+	margin: 0 auto;
+    background: #e1e1e1;
+    font: normal 12px/15px Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #0072BA; 
+    text-decoration: none;
+    font-weight:bold;
+}
+
+a:hover  {text-decoration: underline;}
+
+sup { 
+	vertical-align:super; 
+	font-size: .65em;
+	line-height: .65em;
+}
+sub { 
+	vertical-align:sub; 
+	font-size: .83em 
+}
+
+h1 {
+	font:bold 26px/29px Arial,Helvetica,sans-serif;
+}
+
+p{
+    margin:10px 0;
+}
+
+#main h1 {
+	color:#fff;
+	margin:0 0 22px 0px;
+    padding:0 26px 0 0;
+}
+
+h2 {
+	font:bold 21px/24px Arial,Helvetica,sans-serif;
+}
+
+.title h2{padding:0 0 20px;}
+
+button { 
+	border:0; 
+	cursor:pointer; 
+	font-weight:bold; 
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	overflow: visible; /* removes extra side padding in IE */  
+}
+button::-moz-focus-inner {
+	border: none;  /* overrides extra padding in Firefox */
+}
+button span { 
+	display:block;
+	white-space:nowrap; 
+}
+
+
+button.active,
+button.inactive { 
+	padding:0 20px 0 0; 	
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png) no-repeat right -49px; 
+	font-size:1.25em; 
+}
+
+button.active span,
+button.inactive span { 
+	height:31px; 
+	line-height:26px;
+	padding:0 0 0 20px; 	
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png) no-repeat left 0px;
+	font-size:14px;
+	color:#999; 
+}
+
+button.active span { 
+	color:#2e2e2e!important;
+}
+
+/**
+* Adding the new CSS class for gift card submit button.
+*/
+button.giftcard-button {
+	padding-left: 20px; 	
+}
+/**
+* Adding this css class as it is used in conjunction with new-account-edit and removed padding from there
+*/
+button.edit-button {
+	padding-left: 0; 	
+}
+
+button.moreoptions {
+	background-color:#E5E5E5 !important;
+	width:158px;
+}
+
+button.buttondownarrow {
+	height:30px;
+	line-height:26px;
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/button_down_arrow.png) no-repeat 0 transparent;
+	margin:-7px 0 0 10px;
+	font-size:11px;
+	color:#2E2E2E;
+}
+
+button.buttonuparrow {
+	height:30px;
+	line-height:26px;
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/button_up_arrow.png) no-repeat 0 transparent;
+	margin:-7px 0 0 10px;
+	font-size:11px;
+	color:#2E2E2E;
+}
+
+/**
+ * Main site frame set up
+ */
+#head {
+    width: 100%;
+    height: 78px;
+    overflow: hidden;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-head.gif) repeat-x;
+}
+
+#head .wrapper {
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-head-wrapper.gif) repeat-x;
+    overflow:hidden;
+}
+
+
+/**
+ * LOGIN PAGE SPECIFIC 
+ *
+ * @param Set parameters
+ * @section
+ */
+#head a{
+    font-weight:normal;
+}
+#head .frame {
+    display: inline;
+    width: 200px;
+    float: right;
+    margin: 10px -5px 0 0;
+}
+
+#head .nav {
+    float: left;
+    padding: 49px 0 0;
+    margin: 0 1px 0 0;
+}
+
+#head .nav .has-drop {
+    padding: 0 12px 0 0;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/login/bg-has-drop.gif) no-repeat 100% 6px;
+}
+
+#head .nav .has-drop:hover {
+    text-decoration: none;
+}
+
+#head .nav li, 
+#head .nav-bar li {
+    float: left;
+    padding: 0 14px;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/login/separator-nav.gif) no-repeat 100% 0;
+    font-size: 13px;
+}
+
+#head .nav li a {
+    color: #000000;
+    background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/login/none.gif) no-repeat 100% 0;
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#head .nav li a {vertical-align:top;}
+}
+
+
+
+#head .nav-bar {
+    float: right;
+    padding: 5px 0 14px;
+}
+
+#head .nav-bar li {
+    padding: 0 7px 0 7px;
+}
+#head .nav-bar .has-drop {
+    padding: 0 11px 0 0;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/login/bg-has-drop.gif) no-repeat 100% 8px;
+}
+
+#head .nav-bar li a {
+    color: #8b8b8b;
+}
+
+
+#head .frame fieldset {
+	padding:0 0 0 12px;
+}
+
+.login-form fieldset {
+    border-bottom:0;
+    padding:0;
+}
+
+
+.account-form {
+    clear: both;
+    padding: 0 0 0 0;
+}
+
+.account-form .account {
+/*    display: inline; */
+/*    padding: 4px 5px; */
+    width: 148px;
+	float:left;
+	height:24px;
+	margin:0 4px 0 0;
+    border: 1px solid #CECECE;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/login/bg-input-text.gif) repeat-x;
+    color: #1a171b;
+}
+
+.account-form .submit {
+    width: 27px;
+    height: 27px;
+    float: left;
+    border: 0;
+    text-align: left;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/login/bg-head-submit.gif) no-repeat;
+    font-size: 18px;
+	line-height:1.25em;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+#wrapperRadioIDPage {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+* html .wrapper{overflow:hidden;}
+.wrapper-box {
+    width: 982px;
+    margin: 0 auto;
+}
+
+.main-bar .wrapper{ 
+	background:none; 
+	margin-top:30px;
+}
+.wrapper:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+#head .logo {
+    float:left;
+    width: 203px;
+    height: 44px;
+    margin: 26px 0 0 0;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-logo.gif) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.logo a {
+    display: block;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#main:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+#main h1 span {
+    letter-spacing: -1px;
+}
+
+.main-holder, .main-holder-account-access{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.main-holder-account-access{
+	background:none;
+}
+
+.bottom-page{
+    width:990px;
+    margin:0 auto;
+    height:11px;
+    font-size:0px;
+    line-height:0px;
+    overflow:hidden;
+    background:#F4F4F4 url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-page-bottom.jpg) no-repeat 0 0;
+}
+
+
+/* Super footer */
+#foot {
+    width: 961px;
+    margin: 0 auto;
+    height:44px;
+    padding: 0 0 0 21px;
+    border: 1px solid #d6d6d6;
+    border-width: 1px 0 0 0;
+    overflow: hidden;
+}
+
+#foot .logo-small, 
+#foot-account-access .logo-small {
+    display: block;
+    width: 203px;
+    height: 36px;
+    margin: 0 27px 21px 0;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-logo.gif) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#foot .logo-small-dark, 
+#foot-account-access .logo-small-dark {
+    display: block;
+    width: 203px;
+    height: 36px;
+    margin: 0 27px 21px 0;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/logo-black.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+#foot .logo-small a, 
+#foot-account-access a {
+    display: block;
+    height: 100%;
+}
+
+#foot .navigation, 
+#foot-account-access .navigation {
+    float:left;
+    margin: 0 0 27px;
+    width:1200px;
+
+}
+#foot-account-access .navigation {
+    margin-bottom:0px;
+}
+
+#foot .navigation li, 
+#foot-account-access .navigation li  {
+    float:left;
+    border-right: 1px solid #e5e5e5;
+}
+
+#foot .navigation p, 
+#foot-account-access .navigation p  {
+    margin: 0 0 4px 0;
+    font: 11px/13px Arial, Helvetica, sans-serif;
+    color: #999999;
+}
+
+#foot .navigation img, 
+#foot-account-access .navigation img  {
+    display:inline;
+	margin: 0 19px 0 0;
+}
+
+#foot .navigation a, 
+#foot-account-access .navigation a{ float:left; clear:both; }
+
+#foot .navigation a img, 
+#foot-account-access .navigation a img{ float:left; }
+
+
+#foot .navigation .link-box, 
+#foot-account-access .navigation .link-box  {
+    margin: 0;
+    padding: 0 8px 0 13px;
+}
+
+.link-box h3 {
+    margin: 0 0 3px 0;
+    font: bold 14px/16px Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+#foot .navigation .info li, 
+#foot-account-access .navigation .info li  {
+    float: left;
+    border: 0;
+}
+
+#foot .navigation .info ul li, 
+#foot-account-access .navigation .info ul li  {
+    float: none;
+    border: 0;
+}
+
+#foot .navigation .info, 
+#foot-account-access .navigation .info  {
+    overflow: hidden;
+}
+
+#foot .navigation .info ul, 
+#foot-account-access .navigation .info ul  {
+    float: left;
+	padding: 0 57px 0 0;
+    overflow: hidden;
+}
+#foot-account-access .navigation .info ul  {
+	padding-right:50px;
+}
+
+#foot .navigation .info ul li a, 
+#foot-account-access .navigation .info ul li a  {
+    line-height: 22px;
+    color: #999999;
+}
+
+#foot .information, 
+#foot-account-access .information  {
+    margin: 0 0 30px;
+    text-align: center;
+    font: 11px/14px Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+#foot-account-access .information  {
+    margin-top: 10px;
+}
+#foot .information li, 
+#foot-account-access .information li  {
+    display: inline;
+    padding: 0 8px 0 5px;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/login/separator-foot.gif) no-repeat 100% 2px;
+}
+#head .nav li.no-separator,
+#foot .information .no-separator, 
+#foot-account-access .information .no-separator  {
+    background: none;
+}
+
+#foot-account-access {
+    width: 981px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#foot-account-access .foot-open { 
+	height: 11px;
+    line-height: 0px;
+    font-size: 0px;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/footer-account-top.gif) no-repeat 0 0;
+}
+#foot-account-access .foot-close{ 
+	height: 11px;
+    font-size: 0;
+    line-height: 0;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-page-bottom-rounded.jpg) no-repeat 0 0;
+}
+#foot-account-access .foot-content {
+	width:941px;
+	padding:10px 20px;
+    overflow:hidden;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/footer-account-content.gif) repeat-y 0 0;
+}
+
+.separator-foot {
+    display:block;
+    margin: 30px 0 20px;
+	border-bottom:1px solid #E5E5E5;
+}
+
+#foot-account-access a{
+    font-weight: normal;
+}
+
+#foot .navigation a.alignleft, 
+#foot-account-access a.alignleft{
+    float: left;
+    clear: none;
+}
+/* Main site frame END */
+
+
+/**
+ * MODAL overlays
+ * @section: Modal Popup Overlay
+ */
+#overlay {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: #000;
+}
+.modal {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+}
+.modal .modal-top {
+	width: 622px;
+	height: 90px;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-modal.png) 0 0 no-repeat;
+}
+.modal .modal-center {
+	display: inline-block;
+	width: 622px;
+	margin: 0;
+	height: 1%;
+	overflow: hidden;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-modal.png) 0 center no-repeat;
+}
+.modal .modal-bottom {
+	width: 622px;
+	height: 90px;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-modal.png) 0 bottom no-repeat;
+}
+.modal .modal-inner {
+	padding: 0 60px;
+	text-align: center;
+	color: #676767;
+}
+.modal h2 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing:-1px;
+}
+.modal p {
+	display: inline-block;
+	width: 82%;
+	margin-top: 20px;
+	font-size: 12px;
+	line-height:16px;
+}
+/* MODAL overlays END */
+
+
+/**
+ * ALERTS
+ * 
+ * @section: Login page
+ * @section: Billing and Statements
+ */
+#alert-noscript {
+	clear: both;
+	width: 100%;
+	border-bottom: 1px solid #d0d0d2;
+	background-color: #fffdd4;
+}
+#alert-noscript .alert-content {
+	width: 980px;
+	overflow: hidden;
+	margin: 0 auto -1px;
+	border-bottom: 1px solid #4290c1;
+}
+#alert-noscript .warning { 
+	width:900px;
+	height: 49px;
+	min-height: 49px;
+	padding: 20px 0px 0px 58px;
+	line-height: 33px;
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/warning-noscript.gif) no-repeat 12px 20px;
+}
+#alert {
+	clear: both;
+	margin: 0px 0px 15px 20px;
+    padding: 12px 0 0;
+}
+#alert .alert-open {
+	height:12px;
+    font-size:0;
+    line-height:0;
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/alerts.png) no-repeat 0 0;
+}
+
+#alert .alert-close {
+	height:20px;
+    font-size:0;
+    line-height:0;
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/alerts.png) no-repeat 0 -39px;
+}
+
+#alert .alert-content {
+	width: 100%;
+	overflow: hidden;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/alerts.png) repeat-y 0 -59px;
+}
+
+.warning { /*displays exclamaition point*/
+	float:left;
+	width:770px;
+	min-height: 65px;
+	padding: 10px 44px 0px 120px;
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/alerts.png) no-repeat 0 -325px;
+}
+
+.warning a{
+    font-weight:normal;
+}
+
+.info-error { /*Displays red triangle*/
+    float: left;
+    min-height:52px;
+    padding: 20px 44px 0px 100px;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/OAC-error.png) no-repeat 20px 9px;
+}
+ 
+.info-alert { /*displays blue circle*/
+	float: left;
+	min-height: 52px;
+	padding: 7px 0px 7px 125px;
+	margin-right: 100px;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/alerts.png) no-repeat 0 -410px;
+}
+
+.info-alert2 { /*displays yellow triangle */
+	float: left;
+	min-height: 52px;
+	padding: 10px 44px 7px 125px;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/alerts-login.png) no-repeat 0 -329px;
+}
+
+* html .info-alert{
+    height: 52px;
+}
+.info-alert h4 {
+	padding-top: 20px;
+}
+.zero-left-margin-alert{
+	margin: 0 0 15px 0 !important;
+}
+
+/*adjustments to shift the header text up in the clear default password project */
+.info-alert-password { /*displays blue circle*/
+    float: left;
+    min-height: 52px;
+    padding: 7px 44px 7px 125px;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/alerts.png) no-repeat 0 -410px;
+}
+ 
+* html .info-alert-password{
+    height: 52px;
+}
+.info-alert-password h4 {
+    padding-top: 15px;
+}
+ 
+.info-error h5 {
+    padding-top: 1px;
+}
+ 
+/**
+ * Blocks with Gray outline
+ * 
+ * @section: Login page
+ * @section: Billing and Statements
+ */
+/*.gr-box-rounded {
+	width:700px;
+	background-color:#E5E5E5;
+
+}
+.gr-box-rounded .top {
+	height:10px;
+	line-height:0;
+	background:transparent url(https://careqa.siriusxm.com/cuwi-Kony278/images/grey-info-boxes-sprite.gif) no-repeat scroll 0 0;
+	font-size:0;
+}
+.gr-box-rounded .bottom {
+	height:10px;
+	overflow:hidden;
+	background:transparent url(https://careqa.siriusxm.com/cuwi-Kony278/images/grey-info-boxes-sprite.gif) no-repeat scroll 0 -18px;
+}*/
+
+
+
+
+
+
+
+/**
+ * General Styles
+ */
+/* section for information about owner */
+dl.owner{
+    float:left;
+    padding:0 38px 0 0;
+}
+
+.owner dt{
+    color:#c7e7fb;
+    font:12px/15px Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.owner dd{
+    color:#ffffff;
+    font:16px/18px Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.title-bar{
+    float:left;
+}
+ 
+ 
+ 
+.accent { 
+	margin-top:0;
+	font-weight:bold;
+}
+.side-by-side-gap {
+	margin-left:10px;
+}
+.accent-black {
+	font-weight:bold;
+	color:#000; 
+}
+.disclaimer { 
+	font-size:11px;
+	color:#666;
+}
+.separator {
+	display: block;
+	margin: 20px 0px;
+	border-bottom: solid 1px #e5e5e5;
+}
+.separator-black{
+	border-bottom: solid 2px #2e2e2e;
+}
+.remove-border { border: none; }
+.remove-padding { padding: 0!important; }
+.remove-margin { margin: 0!important; }
+.clear {
+	clear: both;
+	line-height: 0px;
+	font-size: 0px;
+	height: 0px;
+}
+.clear20 {
+	clear: both;
+	line-height: 0px;
+	font-size: 0px;
+	height: 20px;
+}
+.spacer-vert10 { display:block; height:10px; }
+.spacer-vert20 { display:block; height:20px; }
+.spacer-vert180 { display:block; height:180px; }
+.left { float: left; }
+.right { float: right; }
+.relative { position: relative; }
+
+.hide { display: none; }
+.show { display: block; }
+.bold { font-weight: bold; }
+.underline { text-decoration: underline; }
+
+.mt175{
+	margin-top:175px;
+}
+.mt225{
+	margin-top:225px;
+}
+.ml17{
+	margin-left:17px;
+}
+.mt270{
+	margin-top:270px;
+}
+.indent-0-35{padding:0 35px;}
+.w150{width:150px;}
+.w200{width:200px !important;}
+.w250{width:250px;}
+.w300{width:300px;}
+.w316{width:316px;}
+.w335{width:335px;}
+.w350{width:350px;}
+.w370{width:370px;}
+.w480{width:480px;}
+.w550{width:550px;}
+.w580{width:580px;}
+.lh20{height:20px;}
+.m0{margin:0 !important;}
+.mr10{margin-left:10px;}
+.mr40{margin-left:40px;}
+.ml50{margin-left:50px;}
+.rel-left-5{position:relative; left:-5px;}
+
+.vert-middle{vertical-align:middle;}
+
+.required {
+	padding-left: 12px;
+	font-family:Arial;
+	font-weight:bold;
+    background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/label-required.gif);
+    background-position-x: 0;
+    background-position-y: 2px;
+    background-repeat: no-repeat;
+}
+
+.required_withoutImage {
+	padding-left:12px;
+	font-family:Arial;
+	font-weight:bold;
+	background:none;
+}
+
+.required_withoutImageOrPadding {
+	font-family:Arial;
+	font-weight:bold;
+	background:none;
+}
+
+
+.access-bar .form-item label.required {
+	padding-left: 0;
+	line-height: 17px;
+	background: none;
+}
+
+.light-grey {
+	color:#666;
+}
+.red {
+	color:#cf0000 !important;
+	font-weight: normal;
+}
+
+.mid-grey {
+	color:#2e2e2e; 
+}
+
+.large-number-grey{
+	color:#444444;
+}
+
+.login-blue { /*to be replaced*/
+	color: #0072BA; 
+}
+.main-bar {
+    width:100%;
+    margin: -30px 0 0;
+    padding: 44px 0 59px;
+    background: transparent url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-main-blue.jpg) no-repeat scroll 50% 0!important;
+}
+.content-box,
+.content-boxes{
+    float: left;
+	width: 100%;
+	position: relative;
+	margin: -38px 0 0;
+}
+
+.content-boxes{
+    margin: -61px 0 0;
+}
+
+/*---- verify-order.html ----*/
+/**
+ * @section: table-like display
+ */
+
+#strict .row { 
+	border-bottom:solid 1px #e5e5e5; 
+	padding:10px 0px 20px 0px; 
+}
+
+#strict .row h3 { 
+	color:#888888; font-size:14px; 
+}
+
+#strict dl.table-display-sm,
+#strict dl.table-display
+{
+	float: left;
+	width: 415px;
+	margin: 5px 0 5px 0;
+}
+
+#strict dl.table-display
+{
+	width: 495px;
+}
+
+#strict .table-display-sm dt, 
+#strict .table-display dt
+{
+	clear: left;
+	float: left;
+	width: 220px;
+}
+
+#strict .table-display dt.mt10 {
+	margin-top:10px;
+}
+#strict .table-display dt.mt5 {
+	margin-top:5px;
+}
+#strict .table-display dd.mt10 {
+	margin-top:10px;
+}
+#strict .table-display dd.mt5 {
+	margin-top:5px;
+}
+#strict .table-display dd.subTaxes {
+	text-align: right;
+	float: right;
+}
+#strict .table-display-sm dt.minus, 
+#strict .table-display dt.minus
+{
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/dash-long.gif) 337px 13px no-repeat;
+}
+
+#strict .table-display-sm dd,
+#strict .table-display dd
+{
+	float: left;
+	width: 70px;
+	padding: 5px 0px;
+}
+#strict .table-display-sm dd span, 
+#strict .table-display dd span
+{
+	display:inline-block;
+	width:50px;
+	text-align:right;
+}
+
+#strict .table-display dd
+{
+	width: 140px;
+}
+
+#strict .border-bottom { 
+	border-bottom: 1px solid #888; 
+}
+
+#strict .row .column-645 { 
+	width:645px; 
+}
+
+#strict .agreement-label {
+	float:left;
+	margin-left:5px;
+	margin-top:0px;
+	width:670px;
+	clear:right;
+	color:#000000;
+}
+
+.row-holder{
+    overflow:hidden;
+    height:100%;
+}
+/********F**********/
+
+/**
+ * @section: Popup
+ */
+
+.popup-holder { width: auto; position: relative;  }
+
+.popup {
+    display: none;
+    position: absolute;
+    right: -330px;
+    z-index: 9999;
+    width:333px;
+    padding-top: 16px;
+}
+
+.popup .popup-header {
+    width: 337px;
+    height: 25px;
+    position: relative;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/complete/bg-popup.png) 0 0 no-repeat;
+}
+
+.popup .popup-center {
+    width: 337px;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/complete/bg-popup.png) 0 49% no-repeat;
+    min-height: 30px;
+}
+
+.popup .popup-bottom,
+.popup .popup-bottom-small {
+    width: 291px;
+    height: 48px;
+    padding:0 0 0 46px;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/complete/bg-popup.png) 0 bottom no-repeat;
+}
+
+.popup .popup-bottom-small{
+    height:39px;
+}
+
+.popup .popup-bottom p{
+    margin:0;
+    padding:3px 0 0;
+}
+
+.popup a.close {
+    display: block;
+    width:14px; height:14px;
+    position:absolute;
+    right: 12px;
+    bottom: 3px;
+    z-index: 100;
+    text-indent: -9999px;
+    overflow:hidden;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/complete/button-close.gif) no-repeat;
+}
+
+.popup .text-bar {
+    padding: 2px 25px 0 47px;
+    position: relative;
+    top: -5px;
+    line-height: 17px;
+}
+
+.popup2 .popup-center strong {
+    margin:0 0 7px;
+    display:block;
+    font:bold 12px/17px Arial, Helvetica, sans-serif;
+}
+/*
+.popup .popup-center span {
+    display:block;
+    line-height:16px;
+}
+*/
+.popup .popup-center p,
+.complete .row .popup-center p{
+    margin:10px 0 0;
+    width:265px;
+    line-height:16px;
+}
+
+.popup .popup-center p a{
+    font-weight:normal;
+}
+
+.popup .text-bar p {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    text-align:left;
+}
+
+.popup-holder a.open{
+    color:#2e2e2e;
+    font-weight:normal;
+    position:relative;
+    z-index:1;
+    padding:0 15px 0 0;
+    background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/complete/popup-link.png) no-repeat 100% 0;
+}
+
+.textDecorationNone{
+	text-decoration:none;
+}
+
+.popup-holder a.tootip_text{
+    color:#2e2e2e;
+    font-weight:normal;
+    position:relative;
+    z-index:1;
+    margin:0 -5px 0 0;
+    padding:0;
+}
+.popup-holder a.toopTipImg{
+	color:#2e2e2e;
+    font-weight:normal;
+    position:relative;
+    z-index:1;
+    padding:0 15px 0 0;
+    background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/tooltip-info.png) no-repeat 100% 0;
+}
+.intext {
+	display: inline;
+}
+.intext a.open{
+    color: #0072BA;
+    font-weight: bold;
+    padding:0;
+    background: none;
+}
+
+#setup-nav-bottom .popup-holder a.open{
+    background:none;
+    padding:0;
+    font-size:15px;
+    line-height:30px;
+    margin:-10px 0 0;
+    float:left;
+
+}
+
+#setup-nav-bottom .popup-holder a.open:hover{
+    text-decoration:none;
+}
+
+.polleft .popup-bottom,
+.polleft .popup-bottom-small{
+    padding:0 0 0 26px;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/complete/bg-popup1.png) 0 bottom no-repeat;
+}
+
+.polleft .popup-header {
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/complete/bg-popup1.png) 0 0 no-repeat;
+}
+
+.polleft .popup-center {
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/complete/bg-popup1.png) 0 49% no-repeat;
+}
+
+.polleft a.close {
+    right:32px;
+
+}
+
+.polleft .text-bar {
+    padding: 2px 47px 0 25px;
+}
+
+
+/* center content part */
+.content {
+	padding: 20px 20px 40px 20px;
+    width:942px;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/top-content-cap2.png) 0 0 no-repeat;
+}
+.indent-box {
+	padding:2px 0 0;
+	width:100%;
+}
+
+.bottom-page-round {
+	height: 11px;
+	margin: 0 auto;
+	overflow: hidden;
+    width:980px;
+	background: #fff url("https://careqa.siriusxm.com/cuwi-Kony278/images/bg-page-bottom-rounded.jpg") no-repeat 0 0;	
+}
+.content h2 {
+	margin-bottom: 12px;
+	font-size: 19px;
+}
+.content p {
+	width: 570px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	line-height: 1.4;
+}
+.content p a {
+	font-weight: normal;
+}
+
+/* Marketing Promo Space - Upsell - end*/
+/* LOGIN PAGE SPECIFIC - END*/
+
+.red-msg{
+	color: #cf0000;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+/**
+ * Properties for decorating elements forms:
+   requireds, error messages, inputs texts, selects, texts boxs, checkboxs
+ */
+form h3 {
+	font-size: 15px;
+}
+form p.required {
+	margin-top: 7px;
+}
+form p.error-msg {
+	display: none;
+	color: #cf0000; 
+	font-weight: normal;
+}
+form .error-msg-block {
+	color: #cf0000; 
+	font-weight: normal;
+}
+.form-item {
+	padding: 10px 0 5px;
+	overflow: hidden;
+}
+
+.reviewPageFormat {
+    padding: 5px 0 5px !important;
+    overflow: hidden;
+}
+ 
+.form-item label {
+	float: left;
+	width: 210px;
+	margin-top: 6px;
+}
+
+.form-item label.oemListenerInfoLabel {
+	width: 110px;
+}
+
+.oemListenerInfoLargeSubHeading {
+	padding-bottom:15px;
+}
+
+.oemListenerInfoSmallSubHeading {
+	padding-bottom:10px;
+}
+ 
+.form-item label.reviewPage {
+    float: left;
+    width: 210px;
+    margin-top: 0px !important;
+}
+ 
+.form-item label span {
+	display: block;
+}
+
+.form-item label.error {
+	color: #cf0000; 
+	background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/label-required-error.gif);
+}
+
+.form-item.error label {
+	color:#cf0000; 
+}
+
+.form-field-notes {
+	color: #888;
+	font-size: 11px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.form-item .form-field {
+	float: left;
+	margin-right: 10px;
+	display:inline;
+	background-color: #ffffff;
+}
+.form-item .form-field .inputbox {
+	padding: 4px 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #444444;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/input-bg.png) 0 0 no-repeat;
+	border: 1px solid #cecece;
+}
+.form-item .form-field .textbox {
+	height: 50px;
+	padding: 4px 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	color: #444444;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/input-bg.png) 0 0 no-repeat;
+	border: 1px solid #cecece;
+}
+.form-item .form-field .selectbox {
+	padding: 3px 2px 3px 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #444444;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/input-bg.png) 0 0 no-repeat;
+	border: 1px solid #cecece;
+}
+.form-field-error,
+.form-item.error input,
+.form-item.error select,
+.form-item.error textarea {
+	border: 2px solid #cf0000 !important;
+}
+.form-item .form-field .w40 {
+	width: 30px;
+}
+.form-item .form-field .w50 {
+	width: 40px;
+}
+.form-item .form-field .w125 {
+	width: 115px;
+}
+.form-item .form-field .w170 {
+	width: 160px;
+}
+.form-item .form-field .w230 {
+	width: 220px;
+}
+.form-item .form-field p {
+	width: 350px;
+	margin: 3px 0;
+	font-size: 11px;
+	color: #888;
+}
+.form-item .form-field span,
+.form-item .form-field .description-sm,
+.form-item .form-field .instructions {
+	padding-left: 20px;
+	font-size: 11px;
+	color: #888;
+}
+
+/*for descriptions that need to be placed to a separate line from the field*/
+.form-item .form-field .description-sm {
+	padding:0;
+}
+/*next to text fields explanation copy*/
+.form-item .form-field .instructions {
+	display:inline;
+	float:right;
+	width:180px;
+	line-height:1.2em;
+}
+
+
+.form-item .form-field div.padding {
+	padding-top: 15px;
+}
+
+.form-item .field-error-msg,
+.equal-error-msg,
+.pin-error-msg {
+	display: none;
+	padding: 3px 0;
+	font-size: 12px;
+	color: #cf0000; 
+    clear:both;
+    font-weight: normal;
+}
+
+a.link-in-error-msg {
+	text-decoration: underline;
+	color: #cf0000; 
+}
+
+.form-item .field-error-msg span {
+	display: block !important;
+	padding: 0;
+	font-weight: normal;
+	color:#cf0000; 
+}
+.form-item .field-error-msg span span {
+	padding:0 0 0 6px;
+}
+
+.field-error-msg {
+	color: #cf0000;
+	font-weight: normal;
+	padding-top: 2px;
+}
+
+.field-error-msg-size-color{
+	/*font-size: 11px;*/
+	font-weight: normal;
+	color: #cf0000; 
+}
+
+.field-error-msg-position{
+	padding-top:20px;
+}
+
+.form-item .comments{
+    float:left;
+    /*font:11px/28px Arial, Helvetica, sans-serif;*/
+	font-size:11px;
+	line-height:1.4em;
+    color:#888888;
+}
+
+.form-item .check-box-label {
+	margin-top:2px;
+}
+
+/*for form fields that have a single label and need to be vertically stacked*/
+.form-item  .multi-row-block .label-holder,
+.form-item  .multi-row-block .field-holder{
+	float:left;
+}
+.form-item  .multi-row-block .field-holder {
+	width:440px;
+}
+
+.field-holder .form-field {
+	margin-bottom:15px;
+}
+
+.step {
+	min-height: 600px;	
+}
+
+div#verify.step {
+	min-height: 275px;	
+}
+
+div#paymentinfo.step {
+	min-height: 525px;	
+}
+
+.winback-specialoffer-nav-bottom{
+	padding-top:30px;
+	padding-right:10px;
+}
+
+#setup-nav-bottom #proceed,
+#setup-nav-bottom #proceedDisabled,
+#setup-nav-bottom-simpler #proceed { float:right; }
+
+/**
+ * Bottom of Each step navigation
+ *
+ * Continue
+ * Back
+ * Cancel
+ */
+#setup-nav-bottom{
+    margin:20px 0 0;
+}
+#setup-nav-bottom:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+#setup-nav-bottom #back,
+#setup-nav-bottom-simpler #back { float:left; margin-top:-5px; }
+
+#setup-nav-bottom #proceed,
+#setup-nav-bottom-simpler #proceed { float:right; }
+
+#setup-nav-bottom .submit-activate-button {
+	width: 168px;
+    height: 31px;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/submit-and-activate-168x31.gif) no-repeat;
+}
+
+#setup-nav-bottom .proceed-indent{
+    padding:10px 0 0;
+}
+
+#setup-nav-bottom #proceed .button {
+    width: 103px;
+    height: 33px;
+    border: 0;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/button-continue.gif) no-repeat;
+    cursor: pointer;
+}
+
+#setup-nav-bottom .cancel {
+	margin-left:24px;
+}
+/* bottom of each step - END */
+/* FORM deco - END */
+
+/**
+ * Custom radio buttons
+ * 
+ * @section: Used across multiple pages, everywhere a custom radio button is used
+ */
+  .radio {
+	width:26px;
+	height:26px;
+	float:left;
+	line-height:20px;
+	margin:-4px 10px 0px 0px;
+	cursor:pointer;
+	/*display:none;
+	position:relative;*/
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/radio-button.gif) 0 -26px no-repeat; 
+  }
+  
+  .radio.checked{
+   background-position:top;
+  }
+  
+  .styled {
+   margin-left: -9999px !important;
+  }
+  .custom-radio-label{
+   height:26px;
+   line-height:24px;
+   margin:0 0 0 20px;
+  }
+/* -----------------END------------------- */
+
+/**
+ * Custom check boxes
+ * 
+ * @section: Used across multiple pages, everywhere a custom radio button is used
+ */
+  .checkbox {
+	width:32px;
+	height:28px;
+	float:left;
+	line-height:20px;
+	margin:-4px 10px 0px 0px;
+	cursor:pointer;
+	/*display:none;
+	position:relative;*/
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/checkbox.gif) 0 -26px no-repeat; 
+  }
+  
+  .checkbox.checked{
+   background-position:top;
+  }
+  
+  .custom-checkbox-label{
+   height:26px;
+   line-height:24px;
+   margin:0 0 0 20px;
+  }
+/* -----------------END------------------- */
+/**
+ * 
+ * @section: block selection subscribe to Sirius Internet Radio or not
+ */
+
+div.gr-box-rounded{
+	background-color:#e5e5e5; 
+	width:700px;
+}
+
+div.top{
+	width:700px; 
+	height:10px;
+    font-size:0;
+    line-height:0;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/gr-box-bg-top.gif) no-repeat 0 0;
+}
+
+div.bottom{
+	width:700px; 
+	height:10px; 
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/gr-box-bg-bottom.gif) no-repeat 0 0;
+	overflow:hidden;
+}
+div.bottom-selected{
+	width:700px; 
+	height:12px; 
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/gr-box-bg-bottom.gif) no-repeat 0 0;
+	overflow:hidden;
+}	
+
+div.middle {
+    background-color: #E5E5E5;
+    color: #676767;
+    height: 10px;
+    margin: 0 1px;
+}
+div.center{
+	margin:0px 10px; 
+	/*padding:10px;*/ 
+	padding:15px 20px;
+	background-color:#fff;
+}
+
+div.center.two-column{
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/center-two-column-bg.gif) repeat-y 0 0;
+}
+	
+div.gr-box-rounded-selected{
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/blue-laser-outline.gif) repeat-y 0 0;
+}
+
+button.open{
+    z-index:300;
+    margin:-10px 0 0;
+    position:relative;
+}
+
+button.disabled span{
+    color: #aaa;
+}
+
+button strong,
+button span{
+    z-index:1;
+	color: #2e2e2e;
+}
+
+.fleft {
+    float:left;
+}
+
+.fright {
+	margin-right:15px;
+    margin-top:-14px;
+    float:right;
+
+}
+
+.fright_upsell1{
+    float:right;
+    margin-right:15px;
+    maring-top:-16px;
+}
+
+.fright_upsell {
+    float:middle;
+}
+
+.tooltipText{
+    font-size:12px;
+	font-weight:normal;
+}
+
+
+.activate-box {
+	color:#676767;
+}
+
+/*Used for iframe background colors*/
+.usps { 
+	background-color:#fff; 
+}
+.usps-frame {
+	height:205px;
+	width:500px;
+}
+
+.content-preloader-image {
+	min-height: 100px; 
+	height: auto !important; 
+	height: 100px; 
+	background: #fff url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/ajax-loader.gif) center center no-repeat;
+}
+.mt80{
+	margin-top:80px;
+}
+
+/*register overlay*/
+#register-overlay .modal-close-btn {
+	display: block;
+	width: 77px;
+	height: 24px;
+	margin: 10px auto 0;
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/login/modal-close-btn.png) no-repeat;
+}
+.text-align-left{
+	text-align:left !important;
+}
+
+.error
+{
+	color:#cf0000;
+	font-weight: normal;
+}
+.no-email-error-msg{
+	width:517px;
+}
+
+/* left nav */
+.main-navigation {
+	float: left;
+	width: 235px;
+	margin-bottom: 10px;
+}
+.main-navigation ul{
+    overflow:hidden;
+    width:100%;
+}
+
+.main-navigation li {
+	zoom: 1;
+	margin: 0;
+	padding: 0;
+	height:40px;
+	overflow:hidden;
+}
+
+.main-navigation li.first {
+	height:42px;
+}
+
+.main-navigation li a {
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-left-nav-container.png) no-repeat;	
+	display: block;
+	height: 10px;
+	padding: 15px 0 15px 10px;
+	margin: 0;
+	color: #FFFFFF;
+	zoom: 1;
+    font-weight:bold;
+}
+
+.main-navigation li.first a {
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-left-nav-top.png) no-repeat;
+	height: 12px;
+}
+
+.main-navigation li.last a {
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-left-nav-btm.png) no-repeat;
+	margin-top: -2px;	
+}
+
+.main-navigation li a.active {
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-left-nav-active.jpg) no-repeat;
+	margin-left: -7px;
+	padding-left: 18px;
+    position:relative;
+}
+
+.main-navigation li a.active:hover {
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-left-nav-active.jpg) 0 0 no-repeat;
+}
+
+.main-navigation li a:hover {
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-left-nav-container-hover.png) no-repeat;
+}
+
+.main-navigation li.first a:hover {
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-left-nav-top-hover.png) no-repeat;
+}
+
+.main-navigation li.last a:hover {
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/bg-left-nav-btm-hover.png) no-repeat;	
+}
+
+#flatloader {
+    float: right;
+    left: 330px;
+    position: absolute;
+    top: 80px;
+    z-index: 1000;
+    background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/ajax-loader-flat.gif);
+    width:128px;
+    height:15px;
+    display:none;
+}
+
+/*
+ * jQuery UI CSS Framework @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height: 1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position: absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/*
+ * jQuery UI Button @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Button#theming
+ */
+.ui-button { background: none repeat scroll 0 0 transparent; display: inline-block; position: relative; padding: 0; margin-right: .1em; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; border:0 none !important;} /* the overflow property removes extra width in IE */
+.ui-button-icon-only { width: 2.2em; } /* to make room for the icon, a width needs to be set here */
+button.ui-button-icon-only { width: 2.4em; } /* button elements seem to need a little more width */
+.ui-button-icons-only { width: 3.4em; } 
+button.ui-button-icons-only { width: 3.7em; } 
+
+.ui-button span {
+	background: url("https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png") no-repeat scroll right -48px transparent; display: block;
+    font-size: 1.25em;
+    height: 31px;
+    padding: 0 20px 0 0;
+}
+
+.ui-button div {
+    background: url("https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png") no-repeat scroll left 0 transparent;
+    font-size: 14px !important;
+    font-weight: bold;
+    height: 31px;
+    line-height: 26px;
+    padding: 5px 0 0 20px;
+    display: block;
+    white-space: nowrap;
+    color: #2E2E2E !important;
+	z-index: 1 !important;
+}
+
+.ui-button strong, .ui-button span {
+    color: #2E2E2E;
+    z-index: 1;
+}
+
+.ui-buttonStrong {
+    background: url("https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png") no-repeat scroll right -48px transparent !important;
+    display: block;
+    font-size: 1.25em;
+    height: 31px;
+    padding: 0 20px 0 0;
+}
+
+.ui-button strong {
+    background: url("https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png") no-repeat scroll left 0 transparent;
+    font-size: 14px;
+    height: 31px;
+    line-height: 26px;
+    padding: 0 0 0 20px;
+    display: block;
+    white-space: nowrap;
+}
+
+/*button text element */
+.ui-button .ui-button-text { display: block; line-height: 1.4;  }
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text { padding: .4em; text-indent: -9999999px; }
+.ui-button-text-icon-primary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 1em .4em 2.1em; }
+.ui-button-text-icon-secondary .ui-button-text, .ui-button-text-icons .ui-button-text { padding: .4em 2.1em .4em 1em; }
+.ui-button-text-icons .ui-button-text { padding-left: 2.1em; padding-right: 2.1em; }
+/* no icon support for input elements, provide padding by default */
+input.ui-button { padding: .4em 1em; }
+
+/*button icon element(s) */
+.ui-button-icon-only .ui-icon, .ui-button-text-icon-primary .ui-icon, .ui-button-text-icon-secondary .ui-icon, .ui-button-text-icons .ui-icon, .ui-button-icons-only .ui-icon { position: absolute; top: 50%; margin-top: -8px; }
+.ui-button-icon-only .ui-icon { left: 50%; margin-left: -8px; }
+.ui-button-text-icon-primary .ui-button-icon-primary, .ui-button-text-icons .ui-button-icon-primary, .ui-button-icons-only .ui-button-icon-primary { left: .5em; }
+.ui-button-text-icon-secondary .ui-button-icon-secondary, .ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+.ui-button-text-icons .ui-button-icon-secondary, .ui-button-icons-only .ui-button-icon-secondary { right: .5em; }
+
+/*button sets*/
+.ui-buttonset { margin-right: 7px; }
+.ui-buttonset .ui-button { margin-left: 0; margin-right: -.3em; }
+
+/* workarounds */
+button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra padding in Firefox */
+
+/**
+ * Stretchable Buttons
+ * 
+ * @section: Used across multiple pages, stretches to the size of the label
+ */
+ /**
+ * removed padding 0 from here and added in giftcard-button and edit-button to customize for those buttons
+ */
+button.new-account-continue,
+button.new-account-submit,
+button.new-account-edit,
+button.new-account-activation { 
+	margin: 0;
+	background: none; 
+	font-size: 0;
+}
+
+button.winback-continue,
+button.winback-submit,
+button.winback-edit { 
+	margin: 0;
+	background: none; 
+	font-size: 0;
+}
+
+button.new-account-continue strong,
+button.new-account-submit strong { 
+	display: block;
+	height: 31px;
+	padding: 0 20px 0 0; 	
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png) no-repeat right -48px; 
+	font-size: 1.25em;
+}
+
+button.new-account-continue span,
+button.new-account-submit span { 
+	height:31px; 
+	line-height:26px;
+	padding:0 0 0 20px; 	
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png) no-repeat left 0px;
+	font-size:14px;
+	/*color:#999;*/
+	display: block;
+	font-weight:bold;
+}
+
+ button.new-account-activation{ 
+display: block; 
+height: 31px; 
+padding: 0 20px 0 0; 
+background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png) no-repeat right -48px; 
+font-size: 1.25em; 
+} 
+button.new-account-activation span{ 
+height:31px; 
+line-height:26px; 
+padding:0 0 0 20px; 
+background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png) no-repeat left 0px; 
+font-size:14px; 
+display:block;
+font-weight:bold;
+}
+
+button.new-account-submit span { 
+	color:#2e2e2e;
+}
+
+button.new-account-edit strong { 
+	display: block;
+	padding:0 12px 0 0; 
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png) no-repeat right -136px; 
+	font-size:1.25em; 
+}
+
+button.new-account-edit span { 
+	height:23px; 
+	line-height:20px;
+	padding:0 0 0 12px; 	
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/buttons-sprite.png) no-repeat left -96px;
+	font-size:11px;
+	color:#999; 
+}
+
+button.new-account-edit.active span { 
+	color:#2e2e2e; 
+}
+
+.form-field span.input-group {
+	padding: 0;	
+}
+
+
+/*
+ * jQuery UI Dialog @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Dialog#theming
+ */
+.ui-dialog { 
+	position: absolute;
+	padding: .2em; 
+	width: 300px; 
+	overflow: hidden; 
+	 -moz-border-radius: 12px 12px 12px 12px !important;
+    -moz-box-shadow: 0 0 50px #000000 !important;
+    -webkit-box-shadow: 0 0 50px #000000 !important;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 6px solid #11AAFF;
+    overflow: visible;
+}
+
+.ui-dialog-title {
+	font-size: 1.3em;	
+}
+
+.ui-dialog .ui-dialog-titlebar { padding: .5em 1em .3em; position: relative;  }
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .2em 0; color: #000000; } 
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .1em; top: 20%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-close span { 
+	display: block; 
+	margin: 1px; 
+	background: url("https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/button-close.png") no-repeat scroll 0 0 transparent;
+    height: 35px;
+    position: absolute;
+    right: -21px;
+    text-indent: -9999px;
+    top: -25px;
+    width: 35px;
+    z-index: 200;
+}
+.ui-dialog .ui-dialog-titlebar-close.ui-state-hover  { 
+	background: none;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.ui-dialog .ui-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {text-align:center; margin-bottom:13px;}
+.ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; min-width: 158px;}
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+/*
+ * jQuery UI Resizable @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+/*
+ * jQuery UI Tabs @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; padding: 0; zoom: 1;visibility: visible !important; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav li { background-color: #FFFFFF; list-style: none; float: left; position: relative; top: 0px; border: 0 none; white-space: nowrap;}
+.ui-tabs .ui-tabs-nav li a { float: left; padding: 16px 0 9px; text-decoration: none; background-color: #333333;}
+.ui-tabs .ui-tabs-nav li a.active { padding-bottom: 12px; background-color: #0F90E0;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+/*
+ * jQuery UI CSS Framework @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/
+ */
+
+
+/* Component containers
+----------------------------------*/
+.ui-widget { font: 12px/15px Arial,Helvetica,sans-serif;}
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Arial,Helvetica,sans-serif/*{ffDefault}*/!important; font-size: 1em; }
+.ui-widget-content {  background: #ffffff/*{bgColorContent}*/ url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-bg_flat_75_ffffff_40x100.png)/*{bgImgUrlContent}*/ 50%/*{bgContentXPos}*/ 50%/*{bgContentYPos}*/ repeat-x/*{bgContentRepeat}*/; /*color: #222222{fcContent}*/; }
+/*.ui-widget-content a { color: #222222/*{fcContent}*//*; }*/
+.ui-widget-header { border: 0px solid #aaaaaa/*{borderColorHeader}*/; background: scroll 0 0 transparent; color: #FFFFFF/*{fcHeader}*/; /*font-weight: bold; */}
+.ui-widget-header a { color: #FFFFFF/*{fcHeader}*/; }
+
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: 1px solid #d3d3d3/*{borderColorDefault}*/; background: #e6e6e6/*{bgColorDefault}*/ url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-bg_glass_75_e6e6e6_1x400.png)/*{bgImgUrlDefault}*/ 50%/*{bgDefaultXPos}*/ 50%/*{bgDefaultYPos}*/ repeat-x/*{bgDefaultRepeat}*/; font-weight: normal/*{fwDefault}*/; color: #555555/*{fcDefault}*/; }
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #FFFFFF/*{fcDefault}*/; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 0px solid #999999/*{borderColorHover}*/; background: #dadada/*{bgColorHover}*/ url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-bg_glass_75_dadada_1x400.png)/*{bgImgUrlHover}*/ 50%/*{bgHoverXPos}*/ 50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/; font-weight: normal/*{fwDefault}*/; color: #FFFFFF/*{fcHover}*/; }
+.ui-state-hover a, .ui-state-hover a:hover { color: #FFFFFF/*{fcHover}*/; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 0 none/*{borderColorActive}*/; background: #ffffff/*{bgColorActive}*/ url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-bg_glass_65_ffffff_1x400.png)/*{bgImgUrlActive}*/ 50%/*{bgActiveXPos}*/ 50%/*{bgActiveYPos}*/ repeat-x/*{bgActiveRepeat}*/; font-weight: bold/*{fwDefault}*/; color: #0072BA; /*{fcActive}*/; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #FFFFFF/*{fcActive}*/; text-decoration: none; }
+/* added for sirius */
+.ui-state-active button, .ui-widget-content .ui-state-active button, .ui-widget-header .ui-state-active button {background: none repeat scroll 0 0 transparent;font-size: 0;margin: 0;padding: 0;}
+.ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight  {border: 1px solid #fcefa1/*{borderColorHighlight}*/; background: #fbf9ee/*{bgColorHighlight}*/ url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-bg_glass_55_fbf9ee_1x400.png)/*{bgImgUrlHighlight}*/ 50%/*{bgHighlightXPos}*/ 50%/*{bgHighlightYPos}*/ repeat-x/*{bgHighlightRepeat}*/; color: #363636/*{fcHighlight}*/; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a { color: #363636/*{fcHighlight}*/; }
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {border: 1px solid #cd0a0a/*{borderColorError}*/; background: #fef1ec/*{bgColorError}*/ url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-bg_glass_95_fef1ec_1x400.png)/*{bgImgUrlError}*/ 50%/*{bgErrorXPos}*/ 50%/*{bgErrorYPos}*/ repeat-x/*{bgErrorRepeat}*/; color: #cd0a0a/*{fcError}*/; }
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a { color: #cd0a0a/*{fcError}*/; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text { color: #cd0a0a/*{fcError}*/; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary { font-weight: bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary,  .ui-widget-header .ui-priority-secondary { opacity: .7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none; }
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon { width: 16px; height: 16px; background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-icons_222222_256x240.png)/*{iconsContent}*/; }
+.ui-widget-content .ui-icon {background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-icons_222222_256x240.png)/*{iconsContent}*/; }
+.ui-widget-header .ui-icon {background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-icons_222222_256x240.png)/*{iconsHeader}*/; }
+.ui-state-default .ui-icon { background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-icons_888888_256x240.png)/*{iconsDefault}*/; }
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-icons_454545_256x240.png)/*{iconsHover}*/; }
+.ui-state-active .ui-icon {background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-icons_454545_256x240.png)/*{iconsActive}*/; }
+.ui-state-highlight .ui-icon {background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-icons_2e83ff_256x240.png)/*{iconsHighlight}*/; }
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {background-image: url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-icons_cd0a0a_256x240.png)/*{iconsError}*/; }
+
+/* positioning */
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-image: url("https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/button-close.png"); }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-off { background-position: -96px -144px; }
+.ui-icon-radio-on { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-tl { -moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-tr { -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-bl { -moz-border-radius-bottomleft: 4px/*{cornerRadius}*/; -webkit-border-bottom-left-radius: 4px/*{cornerRadius}*/; border-bottom-left-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-br { -moz-border-radius-bottomright: 4px/*{cornerRadius}*/; -webkit-border-bottom-right-radius: 4px/*{cornerRadius}*/; border-bottom-right-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-top { -moz-border-radius-topleft: 8px/*{cornerRadius}*/; -webkit-border-top-left-radius: 8px/*{cornerRadius}*/; border-top-left-radius: 8px/*{cornerRadius}*/; -moz-border-radius-topright: 8px/*{cornerRadius}*/; -webkit-border-top-right-radius: 8px/*{cornerRadius}*/; border-top-right-radius: 8px/*{cornerRadius}*/; }
+/* .ui-corner-bottom { -moz-border-radius-bottomleft: 4px{cornerRadius}; -webkit-border-bottom-left-radius: 4px{cornerRadius}; border-bottom-left-radius: 4px{cornerRadius}; -moz-border-radius-bottomright: 4px{cornerRadius}; -webkit-border-bottom-right-radius: 4px{cornerRadius}; border-bottom-right-radius: 4px{cornerRadius}; } */
+.ui-corner-right {  -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/; -moz-border-radius-bottomright: 4px/*{cornerRadius}*/; -webkit-border-bottom-right-radius: 4px/*{cornerRadius}*/; border-bottom-right-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-left { -moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; -moz-border-radius-bottomleft: 4px/*{cornerRadius}*/; -webkit-border-bottom-left-radius: 4px/*{cornerRadius}*/; border-bottom-left-radius: 4px/*{cornerRadius}*/; }
+/*.ui-corner-all { -moz-border-radius: 4px{cornerRadius}; -webkit-border-radius: 4px{cornerRadius}; border-radius: 12px{cornerRadius}; }*/
+
+/* Overlays */
+.ui-widget-overlay { 
+		background: none repeat scroll 0 0 #171518;
+		opacity: .3;
+		filter:Alpha(Opacity=30)/*{opacityOverlay}*/; 
+	}
+.ui-widget-shadow { margin: -8px/*{offsetTopShadow}*/ 0 0 -8px/*{offsetLeftShadow}*/; padding: 8px/*{thicknessShadow}*/; background: #aaaaaa/*{bgColorShadow}*/ url(https://careqa.siriusxm.com/cuwi-Kony278/images/jquery/ui-bg_flat_0_aaaaaa_40x100.png)/*{bgImgUrlShadow}*/ 50%/*{bgShadowXPos}*/ 50%/*{bgShadowYPos}*/ repeat-x/*{bgShadowRepeat}*/; opacity: .3;filter:Alpha(Opacity=30)/*{opacityShadow}*/; -moz-border-radius: 8px/*{cornerRadiusShadow}*/; -webkit-border-radius: 8px/*{cornerRadiusShadow}*/; border-radius: 8px/*{cornerRadiusShadow}*/; }
+
+.ui-dialog-loading .ui-dialog-titlebar { display:none; }
+
+.ui-dialog-loading {
+	border:none;
+}
+
+.ui-dialog-timeout .ui-dialog-titlebar-close { display:none; }
+
+#package-selections .tab-content { 
+	border: 3px solid #0F90E0;
+}
+
+#backLink[disabled] {
+background:#fff;
+color:#0072BA; 
+border:none;
+opacity:1;
+filter:alpha(opacity=100);
+}
+/* Special Packages*/
+div.top-combined-package {
+	height:45px;
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/featured-package-header.gif) repeat 0 0;
+}
+div.top-combined-package-special-offer {
+	height:45px;
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/special-offer-header.gif) repeat 0 0;
+}
+div.top-combined-package-winback-special-offer {
+	width: 700px;
+    height:45px;
+	background:url(https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/special-offer-header.gif) repeat 0 0;
+}
+label.promo-package-name {
+	letter-spacing:-0.5px;	
+}
+body:first-of-type label.promo-package-name{
+	word-spacing:-0.11em;
+}
+#learnMoreLink .learn-more {
+	height:28px;
+	width:119px;
+	background:url("https://careqa.siriusxm.com/cuwi-Kony278/images/learn-more.png") 0 0 no-repeat;
+}
+#learnMoreLink .close {
+	height:28px;
+	width:119px;
+	background:url("https://careqa.siriusxm.com/cuwi-Kony278/images/close.png") 0 0 no-repeat;
+}
+#learnMoreLink .alt {
+	diplay:block;
+	width: 119px;
+    height: 28px;
+    padding:12px 119px 0 0;
+	overflow: hidden;
+	
+}
+.width-450 {
+	width:450px;
+}
+.width-325{
+	width: 325px;
+}
+#regular-quote .font{
+	font-family: Arial, Helvetica, sans-serif;
+}
+#confirmswap div.regular-quote{
+	margin-top: 345px;
+}
+.quoteTitle {
+	color: #777; 
+	font-size: 15px; 
+	font-weight: bold;
+}
+.quoteSubTitle {
+	color: #666; 
+	font-size: 12px;
+}
+#strict .table-display dd {
+	color: #666;				
+}
+#strict .table-display dt.textGrey {
+	color: #676767;		
+}
+#strict .table-display dt.subTaxes {
+	width: 270px !important;
+	padding-left: 50px;	
+}
+#confirmswap .table-display dt.subTaxes {
+	width: 270px !important;
+	padding-left: 50px;	
+}
+.regularQuoteEndMsg {
+	font-size: 18px;
+	font-weight: bold;
+}
+.followOnQuoteEndMsg {
+	font-size: 17px;
+	font-weight: bold;
+}
+.link-url-verifyorder{
+	color:#000000;
+	font: 14px Arial, Helvetica;
+	font-weight: bold;
+	text-decoration:underline;
+}
+
+.link-url-renew{
+	color:#000000;
+	font: 14px Arial, Helvetica;
+	font-weight: bold;
+	text-decoration:underline;
+}
+
+.link-url-shoppingcart{
+	color:#666666;
+	font: 12px Arial, Helvetica;
+	font-weight: bold;
+	text-decoration:underline;
+}
+.quoteTitleNonSC {
+	padding-bottom: 10px; 
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+.whiteBackground {
+	background-color: #ffffff;
+}
+.totalCharges {
+	color: #2DB82D;
+}
+#breadcrumb {
+    font: 11px Arial, Helvetica, sans-serif;
+	width: 987px;
+	height:59px;
+    color:#888;
+    overflow:hidden;
+    margin:-19px 0 0 0;
+    padding:0px;
+}
+#breadcrumb li {
+	height:59px;
+    list-style-type:none;
+	display:inline-block;
+	float:left;
+	background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/darkbar.png'); 
+    background-repeat:no-repeat; 
+    background-position:-5px 2px;
+}
+#breadcrumb li.active {
+	background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/whitebar.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+	background-position:-5px 2px;
+}
+#breadcrumb li.passed {
+	background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/litebar.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+	background-position:-5px 2px;
+}
+#breadcrumb span.arrow {
+	display:inline-block;
+	background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/darkarrow.png');
+    background-repeat:no-repeat; 
+    background-position:left;
+	margin-left:-3px;
+}
+#breadcrumb span.arrow-active{
+	display:inline-block;
+	background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/whitearrow.png');
+    background-repeat:no-repeat; 
+    background-position:left;
+	margin-left:-3px;
+}
+#breadcrumb span.arrow-complete {
+	display:inline-block;
+	background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/litearrow.png');
+    background-repeat:no-repeat; 
+    background-position:left;
+	margin-left:-3px;
+}
+#breadcrumb li.first {
+	background-position:left;
+}
+#breadcrumb li.last {
+	background-position:right;
+}
+#breadcrumb span {
+	display:inline-block;
+    text-decoration: none;
+    color:#333333;
+	outline:none;
+	height: 59px;
+}
+#breadcrumb li.passed span.step1, #breadcrumb li.active span.step1 {
+	margin-left:11px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/green1.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li.passed span.step2, #breadcrumb li.active span.step2 {
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/green2.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li.passed span.step3, #breadcrumb li.active span.step3 {
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/green3.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li.passed span.step4, #breadcrumb li.active span.step4 {
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/green4.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li.passed span.step5, #breadcrumb li.active span.step5 {
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/green5.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li.passed span.activate-passed, #breadcrumb li.active span.activate-passed {
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/greenstar.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+	width: 100%;
+}
+#breadcrumb li span.step1 {
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/grey1.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li span.step2{
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/grey2.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li span.step3 {
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/grey3.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li span.step4 {
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/grey4.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li span.step5 {
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/grey5.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+}
+#breadcrumb li span.activate-passed{
+	margin-left:25px;
+    background-image:url('https://careqa.siriusxm.com/cuwi-Kony278/images/flow/greystar.png'); 
+    background-repeat:no-repeat; 
+    background-position:left;
+	width: 100%;
+}
+#breadcrumb span.listener  {
+	width: 125px;
+}
+#breadcrumb span.type  {
+	width: 152px;
+}
+#breadcrumb span.package {
+	width: 153px;
+}
+#breadcrumb span.plan {
+	width: 156px;
+}
+/* sms-20638 */
+#breadcrumb span.plan_swap {
+	width: 158px;
+}
+#breadcrumb span.order {
+	width: 143px;
+}
+#breadcrumb li span.activate-complete-width {
+	width: 180px !important;
+}
+#breadcrumb span.manage-questions {
+	width: 155px;
+}
+#breadcrumb span.verify {
+	width: 135px;
+}
+#breadcrumb span.register {
+	width: 145px;
+}
+#breadcrumb li span.reg-confirm {
+	width: 165px !important;
+}
+
+#breadcrumb span.specialoffer {
+	width: 145px;
+}
+#breadcrumb span.reviewandsubmit {
+	width: 145px;
+}
+#breadcrumb li span.winback-confirm {
+	width: 165px !important;
+}
+
+#breadcrumb span p{
+	font: 13px Arial, Helvetica, sans-serif !important;
+	padding:12px 0 0 30px;
+	color:#949494;
+	margin: 10px 0 !important;
+}
+
+
+#breadcrumb li.active span p{
+	color:#979797;
+}
+#breadcrumb li.passed span p{
+	color:#868686;
+}
+#breadcrumb li.first p{
+	padding-top:13px;
+}
+
+.dark-purple {
+	color:#9700b0;
+	font-weight:bold;
+}
+
+.padding-left-25 {
+	padding-left:25px;
+}
+
+.padding-top-5{
+	padding-top: 5px;
+}
+
+.padding0{
+	padding:0 0 0 0;
+}
+
+.overlay-label {
+	padding-left: 12px;
+	font-family:Arial;
+	font-weight:bold;
+}
+
+#plan {
+	min-height:630px;
+}
+
+.ui-rounded-widget {
+	margin: 15px 0px 10px 0px;
+	padding: 10px; 
+	-moz-border-radius: 12px 12px 12px 12px !important;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 6px solid #11AAFF;
+ }
+ 
+.ui-rounded-widget-filler{
+	height:142px;
+	width:668px;
+	display:block;
+	float:left;
+}
+ 
+.renew-box {
+	float: left;
+	margin: 10px 10px 10px 30px;
+}
+.renew-header {
+	font: bold 18px Arial, Helvetica, sans-serif !important;
+}
+.renew-msg {
+	margin: 10px 0px 15px 0px;
+	width: 420px;
+	font: 14px Arial, Helvetica, sans-serif !important;
+}
+#renewNowButton {
+	margin-left:140px;
+}
+.wordwrap {
+	word-wrap:break-word;
+}
+.maxownerwidth {
+	width:155px;
+}
+.link-url {
+	font: 11px Arial, Helvetica
+}
+#link-url-shoppingcart {
+	font: 11px Arial, Helvetica
+}
+#link-url-verifyorder {
+	font: 11px Arial, Helvetica
+}
+#link-url-renew {
+	font: 11px Arial, Helvetica
+}
+
+.bold_less_top_margin { 
+	font-weight: bold;
+	margin-top: -10px; 
+}
+.black_bold { 
+	font-weight: bold;
+	color:#000000; 
+}
+.black-regular { 
+	color:#000000; 
+} 
+.shoppingCartQuoteTotalFontSize {
+	font-size: 12px;
+}
+.shoppingCartQuoteTotalFontSizeMedium {
+	font-size: 15px;
+}
+.shoppingCartFollowOnQuoteTotalFontSize {
+	font-size: 12px;
+}
+#upsellPackageDialog div.fifth_column
+{
+	float:left !important;
+}
+
+
+
+#pricing-badge {
+	overflow:hidden;
+}
+#pricing-badge div.upsell {
+	font: bold 21px/17px Arial,Helvetica,sans-serif;
+	letter-spacing:-1px;
+    text-align: center;
+    color: #FFFFFF;
+    width:60px;
+}
+#pricing-badge div.upsell-offer {
+	padding-top:10px;
+	padding-left:1px;
+	font: bold 21px/17px Arial,Helvetica,sans-serif;
+}
+#pricing-badge div.upsell-price {
+	font: bold 32px/23px Arial,Helvetica,sans-serif;
+	padding-left:8px;
+}
+#pricing-badge div.upsell-term {
+	padding-left:2px;
+	font: bold 15px/15px Arial,Helvetica,sans-serif;
+}
+#pricing-badge span.upsell-currency {
+	font: bold 19px/17px Arial,Helvetica,sans-serif;
+	display:block;
+	width:8px;		
+	float:left;
+	margin-top:3px;
+}
+#pricing-badge span.upsell-price {
+	display:block;
+	width:40px;
+	float:left;
+}
+#pricing-badge {
+    background: url("https://careqa.siriusxm.com/cuwi-Kony278/images/new-account/savings_badge.png") no-repeat scroll left top transparent;
+    display: block;
+    float: right;
+    height: 89px;
+    padding: 5px 10px;
+    margin-top:20px;
+    text-align: center;
+    width: 81px;
+    margin-right:15px;
+}
+
+div.pricing-badge-note{
+	width: 135px;
+	float:right;
+	text-align: center;
+}
+
+/* AVS dialogs */
+.avs-header {
+    font-family: Arial; 
+    font-size: 18px; 
+    display: block; 
+    font-weight: bold;
+}
+.avs-text {
+    font-family: Arial; 
+    /*font-size: 14px;*/
+}
+.avs-text-bold {
+    font-family: Arial; 
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+/* Current and New Subscription Box Changes */
+.typeSubscriptionTerm{
+   display: block;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 18px;
+  	color:#666;
+  	padding-left:25px;
+}
+.typeSubscriptionPromoTermColor{
+  	color:#44e;
+}
+.bold{
+	font-weight: bold;
+}
+
+p.paymentInfoText{
+	font-style: italic;
+	font-size: 11px;
+}
+div#pricing-module .savings_amount{
+	font-weight: bold;
+	font-size:12px;
+	margin-right:15px;
+	color:#09AE0F;
+	margin-right:18px;
+	margin-top:5px;
+}
+
+div#pricing-module .savings_addon{
+	margin-right:18px;
+}
+
+div#pricing-module .savings_base{
+	margin-right:24px;
+}
+
+span.subHeadingText {
+	font-size: 18px; 
+	font-weight: bold;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+/* Moved here for White Label */
+.chatButton {
+	width: 114px;
+	height: 34px;
+	background: transparent url('https://careqa.siriusxm.com/cuwi-Kony278/images/ChatButton-Small.png') no-repeat top left;
+
+}
+.floatChatButton{
+	background: transparent url('https://careqa.siriusxm.com/cuwi-Kony278/images/ChatButton-LargePhoto-v2.png') no-repeat top left;
+	width: 221px;
+	height: 105px;
+	position:absolute;
+	      	
+}
+
+#chatLink {
+	color:#0072BA; 
+	font-weight:bold;
+	font-size: 12px;
+	text-decoration:none;
+	display:none;
+	background:none;
+}
+
+.csframe {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+	width: 735px;
+	height: 750px;
+	background-color: #ffffff;
+	overflow-x: hidden;
+}
+
+.moreOptionsLink{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom:10px;
+	height:20px
+}
+
+.noFeeText{
+	margin-right: 10px;
+	padding-bottom:10px
+}
+
+.renewLaterButtonMargin{
+	margin:15px 0px 15px 475px;
+}
+
+.loading-dialog-filler{
+	width:260px; 
+	height:164px; 
+	display: none;
+}
+
+.term-selections-filler{
+	display:inline;
+	float:left;
+	width:700px;
+}
+
+.cancelMsgText{
+	padding-left:40px;
+	padding-right:40px; 
+	line-height:1.5em;
+	color:#676767
+}
+
+.agreement-label-filler{
+	width:670px !important;
+	margin-top:2px !important;
+}
+
+.giftCardErrorMessage-filler{
+	display:none;
+	padding-left:210px;
+}
+
+.congratulationsDivTitleFiller{
+	padding: 15px 0px 0px 20px;
+}
+
+.congratulationsDivPrintFiller{
+	padding-top: 15px;
+	float:right;
+}
+
+.viewrenewplandetailsFiller{
+	margin-left:5px; 
+	float:none;
+	cursor:pointer;
+}
+
+.display-none{
+	display: none;
+}
+.display-none-impt{
+	display: none !important;
+}
+.displayFiller{
+	display: inline-block;
+}
+
+.displayFillerBlock{
+	display: block;
+}
+
+.margin-top10{
+	margin-top: 10px;
+}
+
+.paddingFiller{
+    padding:3px 3px 3px 0px !important;
+}
+
+.dataPaddingFiller{
+	padding: 0 10px 0 0;
+}
+
+.paddingRightFiller20{
+	padding-right: 20px;
+}
+
+.paddingLeftFiller130{
+	padding-left: 130px;
+}
+
+.paddingBottomFiller15{
+	padding-bottom: 15px;
+}
+
+.widthFiller70{
+	width: 70px;
+}
+
+.widthFiller100{
+	width: 100px;
+}
+
+.widthFiller120{
+	width: 120px;
+}
+
+.widthFiller90{
+	width: 90px;
+}
+
+.heightFiller180{
+	height: 180px;
+}
+
+.visibilityHidden{
+	visibility: hidden;
+}
+
+.contentHeight{
+	height: 2000px;
+}
+
+.wordSpacingFiller{
+	word-spacing:-0.1em;
+}
+
+.positionFiller{
+	position: absolute;
+}
+
+.clearFiller{
+	clear: both;
+}
+
+.topFiller-8{
+	top: -8px;
+}
+
+.topFiller-70{
+	top: -70px !important;
+}
+
+.fontSizeFiller18{
+	font-size: 18px;
+}
+
+.marginTopFiller-17{
+	margin-top: -17px;
+}
+
+.marginLeftFiler30{
+	magin-left: 30px;
+}
+
+.marginLeftFiller0{
+	magin-left: 0px;
+}
+
+.marginFiller{
+	margin:15px 0px 15px 0px;
+}
+
+.float-left{
+	float: left;
+}
+
+.colorFiller{
+	color:#09AE0F"
+}
+
+.colorFillerRed{
+	color:#cf0000; 
+}
+
+.colorFillerBlack{
+	color:black;
+}
+.marginLeft50 {
+	margin-left:50px;
+}
+.marginLeft10{
+	margin-left: 0px;
+}
+.backgroundColorFiller{
+	background-color: #ffffff;
+}
+
+.text-align{
+	text-align: left !important;
+}
+#buttonSection  {
+	display: block;
+}
+#buttonSectionWhiteLabel {
+	display: none;
+}
+.EnhancementFlowPackagePrice .renewat div.popupholder{
+	margin-top:-13px;
+	margin-right:16px;
+}
+.lightblue{
+	background-color: #c7e7fb !important;
+}
+.leftTaxLineItem{
+	float: left;
+	margin: 0 5% 0 10%;
+	width: 100px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.rightTaxLineItem{
+	float: left;
+	width: 100px;
+	text-align: right;
+	font-size: 12px;
+}
+
+#usernameDialog{
+	display: none; 
+	padding-left: 25px;
+}
+.usernameDialogDivWidth{
+	width:540px;
+}
+#usernameDialogInnerDiv{
+	width:540px;
+	float: left; 
+	padding-right: 10px;
+}
+div.swap-radio-gen3message {
+	width: 600px; 
+	color: #9700b0; 
+	padding-left: 40px;
+}
+div.winback-gen3message {
+	color: #9700b0;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.purple {
+	color: #9700b0;
+}
+div#top-shopping-cart #subTitle1, div#top-shopping-cart #subTitle2, div#top-shopping-cart #subTitle3{
+	padding-top:8px;
+}
+div#top-shopping-cart #subTitle3{
+	padding-bottom:6px;
+}
+.radio-label-promo-title{
+	font-size:19px;
+}
+div.grey-filler {
+    background-color: #E5E5E5;
+    color: #676767;
+    height: 10px;
+}
+span.winbackQuoteEndMssg  {
+	font-size:16px;
+	line-height: 18px;
+}
+div.confirmPrint span.winbackQuoteEndMssg  {
+	font-size:16px;
+	line-height: 18px;
+	white-space: nowrap;
+}
+span.quoteTotalAmt  {
+	color:green;
+}
+div.confirmPrint span.quoteTotalAmt  {
+	color:#000;
+}
+
+div.privacyPolicyLink {
+	margin-top:5px;
+	font-size: 12px;
+}
+div.winback-PrivacyPolicyLink {
+  	  padding: 20px 0 20px 0;
+	  font-size: 24px;
+	  font-weight: bold;
+	  font-size: 16px;
+  	  color: #00072ba;
+}
+div.winback-specialoffer-header { 
+	color:#000000;
+	font: 28px Arial;
+	font-weight: bold; 
+}
+
+/* Global class designators to enable/disable specific page elements for either OAC or NCOAC.
+ * Prevents having to code if condition statements in the JSPs.
+ */
+div.OAC-only  {
+	display: block;
+}
+span.OAC-only  {
+	display: inline;
+}
+.NCOAC-only  {
+	display: none !important;
+}
+
+/* Signal Refresh Project */
+div.refreshradioid {
+	font-weight: bold;
+	
+}
+.subheader1{
+	Font-Family: Arial;
+	font-weight: bold;
+	Font-Size: 30px;
+	Color: #000000;
+}
+.subheader1belowtext{
+	 Font-Family:Arial;
+	 Font-Size:13px !important;
+	 Color: #000000;
+	 text-align:justify;
+}
+.subheader1belowtextlarge{
+	 Font-Family:Arial;
+	 Font-Size:14px !important;
+	 Color: #000000;
+	 text-align:justify;
+}
+.subheaderarialBold20pxblack{
+	Font-Family: Arial;
+	font-weight: bold;
+	Font-Size: 20px !important;
+	Color: #000000;
+}
+.inputboxtext{
+	Font-Family: Arial !important;
+	Font-Size: 18px !important;
+	Color: #808080 !important;
+}
+.text12arialblack{
+	Font-Family: Arial !important;
+	Font-Size: 12px !important;
+	Color: #000000 !important;
+}
+.subheaderarialBold12pxblack{
+	Font-Family: Arial !important;
+	font-weight: bold !important;
+	Font-Size: 12px !important;
+	Color: #000000 !important;
+}
+.w600 {
+	width:600px!important;
+}
+
+.paddingleft30{
+ padding-left: 30px;
+ }
+ 
+ /* for heading line in Shopping Cart */
+span.quoteRow  {
+	white-space: nowrap;
+}
+/* for package lines in Shopping Cart */
+span.quoteRow.packagename, span.quoteRow.dark-purple {
+	white-space: normal;
+}
+
+
+/*** new Radio ID page ***/
+.roboto-thin  { font-family: 'Roboto', sans-serif; font-weight:100;}
+.roboto-light  { font-family: 'Roboto', sans-serif; font-weight:300; font-style:normal;}
+#login-bar .roboto-light { letter-spacing: -1.3px; line-height: 34px; white-space: nowrap; }
+.roboto-regular  { font-family: 'Roboto', sans-serif; font-weight:400; }
+.img-wrapper-GS {
+	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/shop-first-bg.jpg) no-repeat center 85px fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-color: #060b1e;
+}
+.container-GS {
+	z-index: 2;
+	background-color: transparent;
+	margin: 0 auto;
+	margin-top: -36px;
+	padding-top: 20px;
+}
+#intro-GS {
+	text-align: center;
+	padding: 0 80px;
+}
+#intro-GS h1 {
+	font-size:56px; /* font-size: 56px; */
+	line-height:61px;
+	letter-spacing: -2px;
+	word-spacing: 3px;
+	margin-top: 46px;
+	margin-bottom: 0;
+	color: #FFFFFF;
+}
+
+#form-GS-box {
+	margin-top: 3%;
+	margin-bottom: 10%;
+	width:100%;
+}
+
+#form-GS {
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px; /* future proofing */
+	background-image: url('https://careqa.siriusxm.com/cuwi-Kony278/images/transparent-div.png');
+	background-repeat: repeat;
+	text-align: center;
+	margin-top: 46px;
+	margin-bottom: 80px;
+	width: 600px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	margin: 0 auto;
+}
+
+#form-GS h2 {
+	font-size:32px; 	/* font-size: 32px; */
+	letter-spacing: -1px;
+	margin-top: 0;
+}
+#form-GS p {
+	font-size:13px;
+}
+.form-control-box-GS {
+	display: block;
+	height: 20px;
+	width: 346px;
+	padding: 6px 12px;
+	margin-top: 29px;
+	margin-bottom: 17px;
+	color: #555555;
+	font-size: 18px;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-group-GS {
+	text-align: left;
+	padding: 0 113px;
+}
+#howFind-GS {
+	text-align: left;
+	padding: 0 113px;
+}
+.form-GS #radioId {
+	margin: 17px auto;
+	margin-top: 29px;
+	font-size: 18px !important;
+	padding-top: 6px !important;
+	font-weight: 200;
+}
+
+#newRadioId #radioId {
+	margin-top: 0px;
+}
+
+#form-GS #continueButton {
+	margin-top: 19px;
+	margin-bottom: 40px;
+}
+.new-btn-GS {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none !important;
+  white-space: nowrap;
+  font-size: 18px !important;
+  color: #FFFFFF !important;
+  line-height: 1.42857143;
+  border-radius: 4px !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: auto;
+	text-indent: 0px;
+	cursor: pointer;
+	float: none;
+	width: 372px;
+	height: 57px !important;
+	padding: 0 !important;
+	background: -webkit-linear-gradient(#0099d0, #004698);
+  background: -o-linear-gradient(#0099d0, #004698); 
+  background: -moz-linear-gradient(#0099d0, #004698); 
+  background: linear-gradient(#0099d0, #004698); 
+  color: #FFFFFF;
+  -moz-box-shadow:    1px 1px 0px 0px #66c2e3 inset; 
+   -webkit-box-shadow: 1px 1px 0px 0px #66c2e3 inset;   
+   box-shadow:         1px 1px 0px 0px #66c2e3 inset; 
+}
+.new-btn-GS:hover {
+  background: -webkit-linear-gradient(#00a9d9, #003489);
+  background: -o-linear-gradient(#00a9d9, #003489); 
+  background: -moz-linear-gradient(#00a9d9, #003489); 
+  background: linear-gradient(#00a9d9, #003489); 
+}
+.new-btn-GS:active {
+  -moz-box-shadow:    3px 3px 4px 0px rgba(0, 0, 0, 0.7) inset; 
+   -webkit-box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.7) inset;   
+   box-shadow:         3px 3px 4px 0px rgba(0, 0, 0, 0.7) inset; 
+}
+/* End new Radio ID page */
+
+
+/* music royalty fee increase    */
+#musicRoyaltyFee p {
+	font-size: 21px;
+}
+
+#musicRoyaltyFee span {
+	font-size: 13px;
+}
+
+/* end music royalty fee increase    */
+
+
+/* for heading line in Shopping Cart */
+span.quoteRow  {
+	white-space: nowrap;
+}
+/* for package lines in Shopping Cart */
+span.quoteRow.packagename, span.quoteRow.dark-purple {
+	white-space: normal;
+}
+
+/* START - NuCaptcha styling override */
+#directions-verbose-label {
+	font-weight:bold;
+}
+	
+#nucaptcha-answer {
+	width:350px;
+	height:25px;
+	border:1px solid;
+	border-color:lightgrey;
+}
+	
+#media-container {
+ 	margin-bottom: 10px;
+ 	margin-top:30px;
+	height:60px;
+	width:373px;
+	border:1px solid;
+	border-color:lightgrey;
+	background-color:white;
+}
+
+#media-container a {
+	padding-left:10px;
+	padding-right:300px;
+	color:#0072ba;
+	-moz-padding-end: 200px;
+    -moz-padding-start: 0;
+}
+
+#media-container a:first-child:before {
+
+}
+
+#media-container a:first-child:after {
+
+}
+	
+#nucaptcha-player {
+	padding-top:20px;
+}
+
+#new-challenge {
+	overflow: hidden;
+	position:relative;
+	float:right;
+	padding-right:20px;
+}
+
+#new-challenge:hover {
+}
+
+#new-challenge:active {
+}
+
+#player-mode {
+	overflow: hidden;
+	position:relative;
+	float:left;
+	padding-left:14px;
+}
+
+#player-mode:hover {
+}
+
+#player-mode:active {
+}
+
+#my-nucaptcha-wrapper {
+	position:relative;
+}
+
+#my-nucaptcha-button-wrapper {
+	position: absolute;
+	right: 0px;
+	top: -20px;
+	width: 100%;
+}	
+
+#nucaptcha-media {
+	height:60px;
+	width:240px;
+	padding-left:60px;	
+}
+
+/* END */
+
+#removeSIR-dialog-msg {
+	text-align: left;
+	line-height:1em;
+	padding-left:1px;
+}
+
+.nobr {
+	white-space:nowrap;
+}
+
+div.img-wrapper-GS div.container-GS div#form-GS-box div#form-GS  { 
+	font-family: 'Roboto', sans-serif; 
+}
+
+div#upsp.img-wrapper-GS div.container-GS div#form-GS-box div#form-GS h2.roboto-light  { 
+	font-weight:200; font-style:normal;
+}
+
+div#upsp.img-wrapper-GS div.container-GS div#form-GS-box div#form-GS div.roboto-regular#howFind-GS p,
+div#upsp.img-wrapper-GS div.container-GS div#form-GS-box div#form-GS div.field-error-msg.error-msg-block {
+	font-family: 'Roboto', sans-serif; 	
+	font-style:normal;
+	font-size: 14px;
+} 
+div#upsp.img-wrapper-GS div.container-GS div#form-GS-box div#form-GS .form-control-box-GS {
+	margin-top: 10px;
+}
+/*service lane one click*/
+.socerror {
+font-size:16px;
+color:#cf0000;
+font-style: italic;
+font-weight: normal;
+}
+
+/* Savings Presentment */
+.green{
+	color: green;
+	text-align: right;
+}
+
+#savingPercentage{
+	display:none;
+}
+
+/* Button Fixes - override Continue button default disabled */
+div#proceedV2 div#proceed  {
+	display: block !important;
+}
+
+
+/* MM Upsell Styling Start */
+div#mmUpsellOverlay {
+	padding-top: 30px;
+	padding-right: 36px;
+	padding-bottom: 40px;
+	padding-left: 36px;
+}
+div#mmUpsellOverlay div.header  {
+	font-family: Arial;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 29px;
+	color: #000;
+	margin-bottom: 16px;
+}
+div#mmUpsellOverlay div.copy  {
+	font-family: Arial;
+	font-size: 13px;
+	line-height: 16px;
+	color: #000;
+	margin-bottom: 34px;
+}
+div#mmUpsellOverlay .img1  {
+	text-align: center;
+}
+div#mmUpsellOverlay span.ui-button-text  {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+	margin-right: 40px;
+}
+button#overlayUpgradeButton strong, button#overlayUpgradeButton span  {
+	color: #fff !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+button#overlayKeepButton strong, button#overlayKeepButton span  {
+	color: #000 !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+div#mmUpsellOverlay #overlayUpgradeButton  { 
+	vertical-align: middle; 
+	margin-left: 10px; 
+}
+div#mmUpsellOverlay #overlayKeepButton  { 
+	vertical-align: middle; 
+	margin-left: 10px; 
+}
+
+.overlay-btn-blue, .overlay-btn-blue:hover, .overlay-btn-blue:link, .overlay-btn-blue:active  {
+	height: 41px;
+  	width: 295px;	
+  	background-color: #fff !important;
+  	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/overlay-btn.png) !important;
+  	background-position: 0px 0px !important;
+    background-repeat: no-repeat !important;
+    color: #fff !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+.overlay-btn-grey, .overlay-btn-grey:hover, .overlay-btn-grey:link, .overlay-btn-grey:active  {
+	height: 41px;
+  	width: 295px;	
+  	background-color: #fff !important;
+  	background: url(https://careqa.siriusxm.com/cuwi-Kony278/images/overlay-btn.png) !important;
+  	background-position: 0px -48px !important;
+    background-repeat: no-repeat !important;
+    color: #000 !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+
+button#overlayUpgradeButton.overlay-btn-blue  {  margin-right: 20px; margin-bottom:25px; }
+
+.black-color{
+	color: #000 !important;
+}
+
+/* MM Upsell Styling End */
+
+
+div#shortDescription ul  { list-style: disc; padding-left: 25px;}
+div#shortDescription .subHeader { font-size: 1.2em; }
+div#shortDescription td { padding-right: 10px; }
+div#shortDescription .detailDescription { font-size: 11.5px; }
+
+/* Winback Flepz Search page error styling*/
+.wb-flepz-error{
+    color: #cf0000;
+    font-weight: 400;
+    padding-top: 6px;
+    padding-left: 14px;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Winback FLEPZ styling */
+div#wb-flepz { padding-bottom: 30px;  }
+div#wb-flepz #showMe  { margin-bottom: 25px;  }
+div#wb-flepz #chatbuttondiv  {  display: none;  }
+div#wb-flepz #chatLink  {  display: inline;  font-size: 14px;  }
+

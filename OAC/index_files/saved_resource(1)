@@ -1,0 +1,13 @@
+
+(function() {
+	if (document.getElementById
+	&& document.createElement
+	&& document.body) {
+		var i=document.createElement( 'IMG');
+		i.src='//adrta.com/k?clid=io&avid=238';
+		i.width=1;
+		i.height=1;
+		i.border=0;
+		document.body.appendChild(i);
+	}
+})();

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/common/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<h1>Hello!</h1>
+<div class="well" id="content">
+
+</div>
+</div>
+<script type="text/javascript" src="js/handlebars.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript">
+	var source = "<p>Package name is {{name}}. <br>{{description}}. Channels are " +
+             "{{channels.length}} kids:</p>" +
+             "<ul>{{#channels}}<li>{{id}} - {{name}}</li>{{/channels}}</ul>";
+	var template = Handlebars.compile(source);
+
+	var result = template(data);
+
+	$('#content').html(result);
+</script>
+</body>
+</html>

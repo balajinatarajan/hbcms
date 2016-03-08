@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head></head>
+    <body style="background-color:#333;color:#fff;font-size:14px;">
+        <h2>CMS DATA</h2>
+        <div id="output">
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+           var urlstr = window.location.href.substring(window.location.href.indexOf('=')+1,window.location.href.length);
+            
+            $.ajax({
+                    url: urlstr,
+                    dataType: "jsonp",
+                    success: function(data){
+                        console.log(data);
+                        $('#output').html('<pre>' + JSON.stringify(data,null,' ') + '</pre>');
+                    }
+                });
+        </script>
+    </body>
+</html>

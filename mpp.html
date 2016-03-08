@@ -1,0 +1,116 @@
+<!doctype>
+<html>
+<head>
+	<link rel="stylesheet" href="http://www.siriusxm.com/sxm/css/global.css">
+	<link rel="stylesheet" href="http://www.siriusxm.com/sxm/bootstrap/css/open-base.css"><link rel="stylesheet" href="http://www.siriusxm.com/sxm/bootstrap/css/bootstrap-sxm.css">
+	<link rel="stylesheet" href="http://www.siriusxm.com/sxm/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="http://www.siriusxm.com/sxm/bootstrap/css/non-responsive.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://www.siriusxm.com/wo/i/ompp/css/mpp3.css">
+	<style type="text/css">
+		#main .sxm-bootstrap.non-responsive .container {
+			width: 1190px;
+		}
+
+		.icons {
+			background-repeat: no-repeat;
+		    background-color: transparent;
+		    width: 88px;
+		    height: 88px;
+		    float: left;
+		    margin-right: 12px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="open-content"><div id="hero">
+			<div class="content">
+				<div class="program-schedule-header clearfix">
+					<h2 class="hero-title" style="float:left">Our Most Popular Packages</h2>
+				</div>		
+			</div>
+		</div><!--! end of #hero -->
+		<div class="clearfix" id="main"><!-- main div -->
+			<div class="sirius sxm-bootstrap non-responsive">
+				<div id="content" style="visibility: visible;"> 
+					<h1>Our Most Popular Packages</h1>
+					<h2 id="subheader">Compare and Find the Best One For You</h2>
+
+					<section class="satellite-options" data-tracking-lpos="MPP3 Satellite Options section">
+						<div class="container">				
+							<div class="row">						
+								<div class="col-xs-4" id="select">				
+									<!-- content inserted by cms -->			
+								</div>						
+								<div class="col-xs-4" id="allaccess">				
+									<!-- content inserted by cms -->			
+								</div>						
+								<div class="col-xs-4" id="mostlymusic">				
+									<!-- content inserted by cms -->			
+								</div>					
+							</div>			
+						</div>	
+					</section>
+					<section class="internet-options" data-tracking-lpos="MPP3 Internet Options section">	
+						<h3>SiriusXM Streaming Options</h3>		
+						<div class="container">		
+							<div class="row">						
+								<div class="col-xs-4">
+									<img src="http://www.siriusxm.com/wo/i/ompp/img/streaming-devices.png" height="" width="" alt="Listen on your PC, tablet or smartphone">
+								</div>						
+								<div class="col-xs-4" id="straddon">								
+									<!-- content inserted by cms -->							
+								</div>						
+								<div class="col-xs-4" id="strsub">								
+									<!-- content inserted by cms -->
+								</div>					
+							</div>			
+						</div>	
+					</section>
+					<div class="offer-details">	
+						<p class="legal">		
+							<strong>OFFER DETAILS: The subscription plan you choose will automatically renew thereafter and you will be charged according to your chosen payment method at then-current rates.</strong> Fees and taxes apply. <strong>To cancel you must call us at 1-866-635-2349. See our <a href="/customeragreement" target="_blank">Customer Agreement</a> for complete terms.</strong> All fees and programming subject to change.
+						</p>	
+					</div>
+					<section class="other-options" data-tracking-lpos="MPP3 Other Options section">		
+						<h3>Additional Listening Options and Specialty Packages</h3>		
+						<div class="container">			
+							<ul>			
+								<li class="nst clearfix" id="newssportstalk">				
+									<!-- content inserted by cms -->	
+								</li>			
+								<li class="ff clearfix" id="famfriendly">				
+									<!-- content inserted by cms -->
+								</li>			
+								<li class="clearfix" id="allinone">				
+									<!-- content inserted by cms -->
+								</li>			
+								<li class="clearfix" id="alacarte">								
+									<!-- content inserted by cms -->
+								</li>		
+							</ul>		
+						</div>	
+					</section>
+				</div>
+			</div><!-- Insert sidebar content below --></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://www.siriusxm.com/static/vendor/js/handlebars.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="application/javascript" src="js/services.js"></script>
+	<script type="text/javascript">
+	   	processDOTCOM('PackageTypeA','1_SIR_AUD_ALLACCESS','allaccess');
+        processDOTCOM('PackageTypeA','1_SIR_AUD_EVT','select');
+        processDOTCOM('PackageTypeA','1_SIR_AUD_PKG_MM','mostlymusic');
+        
+        processDOTCOM('PackageTypeB','1004','straddon');
+        processDOTCOM('PackageTypeC','1005','strsub');
+        
+        processDOTCOM('PackageTypeD','1006','newssportstalk');
+        processDOTCOM('PackageTypeD','1007','famfriendly');
+        processDOTCOM('PackageTypeD','1008','allinone');
+        processDOTCOM('PackageTypeD','1009','alacarte');
+	</script>
+</body>
+</html>

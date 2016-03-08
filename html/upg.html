@@ -1,0 +1,12 @@
+<div class="clearfix">											
+    <h3><em>{{{PromoText}}}</em></h3>	
+</div>
+	
+<h5>{{Package.ShortDescription}}</h5>
+
+<ul class="clearfix">						
+    {{#Package.Channels}}<li class="icons"><img width="100%" src="{{this.logo}}"></li>{{/Package.Channels}}
+</ul>
+
+<p><a href="#" class="btn-lg btn-primary-blue show-overlay get-package-btn">Yes, I'd like to upgrade to <span class="package-name">{{Package.PackageName}}</span></a></p>
+<p><a href="#" class="btn-lg btn-primary-black show-overlay get-package-btn right">No, thanks!</a></p>

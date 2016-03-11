@@ -1,5 +1,10 @@
-//var url_base = "http://dvgllvfatapp10.corp.siriusxm.com:9080";
-var url_base = "http://cmsauthor:9080";
+var url_base = "http://dvgllvfatapp10.corp.siriusxm.com:9080";
+//var url_base = "http://cmsauthor:9080";
+
+Handlebars.registerHelper('curly', function(object, open) {
+    return open ? '{{' : '}}';
+});
+
 function gethtml(name){
     return $.ajax({
         url: url_base + "/cs/Satellite?pagename=CAAS/GetTemplate&cid=" + name,
@@ -23,6 +28,17 @@ function getPackageData(id){
 
 function process(html,data,divid) {
     $.when(gethtml(html), getOfferData(data)).done(function(htmlresult,dataresult){
+        var interim_template = Handlebars.compile(htmlresult[0].source);
+        var interim_result = interim_template(dataresult[0]);
+
+        var final_template =  Handlebars.compile(interim_result);
+        var result = final_template(SMS_DATA);
+        $('#' + divid).html(result);
+    });
+}
+
+function getPackage(html,data,divid) {
+    $.when(gethtml(html), getPackageData(data)).done(function(htmlresult,dataresult){
         var interim_template = Handlebars.compile(htmlresult[0].source);
         var interim_result = interim_template(dataresult[0]);
 

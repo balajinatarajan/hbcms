@@ -1,6 +1,7 @@
 <div class="krow middlecenteralign kwt100">
 	<div class="kcell kwt10 middlecenteralign" style="">
-        <input id="frmSelectPackage_btnSiriusAll" kwidgettype="Button" kformname="frmSelectPackage" type="button" class="kwt96 btnRadioOff disableSelection" style="text-align:center;white-space:normal;word-wrap:break-word;margin:0% 2% 0% 2%;padding:3% 0% 3% 0%;" value="" kprogressskin="btnRadio">
+        
+        <input id="frmSelectPackage_btn{{id}}" kwidgettype="Button" kformname="frmSelectPackage" type="button" class="kwt96 btnRadioOff disableSelection" style="text-align:center;white-space:normal;word-wrap:break-word;margin:0% 2% 0% 2%;padding:3% 0% 3% 0%;" value="" kprogressskin="btnRadio">
     </div>
     <div class=" kcell kwt90 topleftalign" style="">
         <div class="ktable kwt100 konycustomcss   " id="frmSelectPackage_vbox532228512178" kwidgettype="VBox" kformname="frmSelectPackage" style=" table-layout:fixed;margin:0% 0% 0% 0%;padding:1% 1% 1% 1%;">
@@ -81,6 +82,7 @@
     var pkg_price = '';
     if('{{id}}' == '1_SIR_AUD_ALLACCESS'){
         pkg_price = frmSelectPackage.lblSiriusAllCost.text;
+        $('#frmSelectPackage_btn{{id}}').removeClass('btnRadioOff').addClass('btnRadio');
     } else if ('{{id}}' == '1_SIR_AUD_EVT'){
         pkg_price = frmSelectPackage.lblSiriusPremierCost.text;
     } else {
